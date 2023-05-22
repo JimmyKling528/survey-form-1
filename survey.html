@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+<title>Voice Casting Form</title>
+<header>
+<h1 class="title" id="title">VOICE CASTING FORM</h1>
+</header>
+<body>
+<p class="description" id="description"><i>Receive voice acting casting calls for different projects</i></p>
+<form id="survey-form">
+<div class="heading">
+<label id="name-label">Name:</label>
+<input id="name" type="text" class="form" required placeholder="Enter your name"/>
+<label id="email-label">Email:</label>
+<input id="email" type="email" class="form" required placeholder="Enter your Email"/>
+<label id="number-label">Age:</label>
+<input id="number" type="number" min="4" max="120" placeholder="Age" class="form" required/>
+<label id="years">How long have you been voice acting?</label>
+<select id="dropdown" class="form">
+  <option value="1">Less than 1 year</option>
+  <option value="2">1-2 years</option>
+  <option value="3">2-3 years</option>
+  <option value="4">3-4 years</option>
+  <option value="5">4-5 years</option>
+  <option value="6">More than 5 years</option>
+</select>
+<p class="obs">
+(professionally or not)
+</p>
+<p>Would you like to be updated on voice acting and singing classes?</p>
+  <input name="radio" type="radio" value="yes"> Yes, Voice Acting AND Singing</input>
+  <br>
+  <input name="radio" type="radio" value="but1"> Yes, but ONLY Voice Acting</input>
+  <br>
+  <input name="radio" type="radio" value="but2"> Yes, but ONLY Singing</input>
+  <br>
+  <input name="radio" type="radio" value="no"> No, none of them</input>
+  <br> 
+  <p>What  kind of microphone do you use to record?</p>
+<select id="dropdown" class="form">
+  <option value="cellphone">Cellphone</option>
+  <option value="computer">Computer/Notebook/Laptop</option>
+  <option value="headset">Headset</option>
+  <option value="usb">USB</option>
+  <option value="xlr">XLR</option>
+  <option value="other">Other</option>
+</select>
+<p>Check everything that fits your hability with your voice or that you have an interest in auditioning:</p>
+  <input type="checkbox" value="child"> Child Voice</input>
+  <br>
+  <input type="checkbox" value="teen"> Teen Voice</input>
+  <br>
+  <input type="checkbox" value="young"> Young Adult Voice</input>
+  <br>
+  <input type="checkbox" value="adult"> Adult Voice</input>
+  <br>
+  <input type="checkbox" value="elderly"> Elderly Voice</input>
+  <br>
+  <input type="checkbox" value="cartoonish"> Cartoonish Voice</input>
+  <br>
+  <input type="checkbox" value="commercial"> Commercial Voice Over</input>
+  <br>
+  <input type="checkbox" value="narration"> Narration Voice Over</input>
+  <br>
+  <input type="checkbox" value="announcing"> Announcing Voice Over</input>
+  <br>
+  <input type="checkbox" value="promo"> Promo Voice Over</input>
+  <br>
+  <input type="checkbox" value="trailer"> Trailer Voice Over</input>
+  <br>
+  <input type="checkbox" value="book"> Audio Book Voice Over</input>
+  <br>
+  <input type="checkbox" value="game"> Video Game Voice Over</input>
+  <br>
+  <input type="checkbox" value="animation"> Animation Voice Over</input>
+  <br>
+  <input type="checkbox" value="learning"> E-Learning Voice Over</input>
+  <br>
+  <input type="checkbox" value="dubbing"> Dubbing</input>
+  <br>
+  <input type="checkbox" value="legit"> Legit Singing Technique</input>
+  <br>
+  <input type="checkbox" value="soul"> Soul Singing Technique</input>
+  <br>
+  <input type="checkbox" value="belting"> Belting Singing Technique</input>
+  <br>
+  <input type="checkbox" value="speech"> Speech Singing Technique</input>
+  <br>
+  <input type="checkbox" value="singing"> Other Singing Technique</input>
+  <br>
+<p>Any comments or suggestions?</p>
+<textarea class="comments" id="textarea" name="comments" rows="5" cols="65">
+</textarea>
+<br>
+<br>
+<input class="submit" id="submit" type="submit"></input>
+</div>
+</form>
+</body>
+</html>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.title
+{
+  font-family: "Righteous";
+  color: white;
+  text-align:auto;
+  margin-left:60;
+  margin-bottom:-20;
+  width: 100%;
+}
+
+.description
+{
+  font-size:21;
+  text-align:auto;
+  margin-left:45;
+  margin-bottom:0;
+  width: 100%;
+}
+
+body
+{
+  font-family: "Baloo 2";
+  color: white;
+  font-size:20;
+  width: 500px;
+  margin: auto;
+  background-color: #444882;
+  
+}
+
+
+h1
+{
+  font-size: 45;
+}
+
+.heading
+{
+  background-color: #070b4c;
+  padding: 2.5rem 2.5rem;
+  width: 500px;
+  margin: auto;
+  border-radius: 2rem;
+}
+
+.submit
+{
+  width:100%;
+  padding:0.75rem;
+  border-radius: 8px;
+  background: white;
+  color: black;
+}
+
+.input
+{
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form
+{
+  display: block;
+  width: 100%;
+  height:2rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 2px solid #000000
+}
+
+.comments
+{
+    border-radius: 8px;
+    border: 2px solid #000000
+}
+
+.obs
+{
+  font-size: 15;
+  margin-top:0;
+}
+</style>
